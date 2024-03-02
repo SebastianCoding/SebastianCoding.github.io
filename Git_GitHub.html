@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Git und GitHub</title>
+    <link rel="stylesheet" href="Basic.css">
+    <style media="screen">
+    </style>
+  </head>
+
+  <body>
+    <h1>Git Basisbefehle</h1>
+
+    <p>
+      <table id="Commands">
+        <tr>
+          <th id="First">Command</th>
+          <th id="Second">Erklärung</th>
+        </tr>
+        <tr>
+          <td id="First"> <b> git status </b> </td>
+          <td>Zeigt den Status der Dateien in deinem Verzeichnis an.</td>
+        </tr>
+        <tr>
+          <td id="First"> <b> git init </b> </td>
+          <td>Startet ein Git-Respository in dem entsprechenden Ordner</td>
+        </tr>
+        <tr>
+          <td id="First"> <b> git add filename.xy </b> </td>
+          <td>Fügt die Datei deinem Git-Respository hinzu.</td>
+        </tr>
+        <tr>
+          <td id="First"> <b> git add . </b> </td>
+          <td>Fügt alles in dem entsprechenden Ordner dem Respository hinzu.</td>
+        </tr>
+        <tr>
+          <td id="First"> <b> git commit -m "Message" </b> </td>
+          <td>Hiermit werden die Dateien in deinem Respository comitted.</td>
+        </tr>
+        <tr>
+          <td id="First"> <b> git log </b> </td>
+          <td>Zeigt den Log deines Respositories.</td>
+        </tr>
+        <tr>
+          <td id="First"> <b> git diff </b> </td>
+          <td>Zeigt die Differnezen zwischen den unterschiedlichen Versionen an.</td>
+        </tr>
+        <tr>
+          <td id="First"> <b> git checkout filename.xy </b> </td>
+          <td>Geht zu der letzten Verssion die Commited wurde.</td>
+        </tr>
+        <tr>
+          <td id="First"> <b> git rm --cached -r . </b> </td>
+          <td>Entfernt alle Dateien aus der Staging Area.</td>
+        </tr>
+      </table>
+    </p>
+
+    <h1>GitHub Basisbefehle</h1>
+    <p>
+      <table id="Commands">
+        <tr>
+          <th id="First"> Command </th>
+          <th id="Second"> Erklärung </th>
+        </tr>
+        <tr>
+          <td id="First"><b>git remote add origin URL </b></td>
+          <td>Verknüpft das lokale mit dem GitHub Respository.</td>
+        </tr>
+        <tr>
+          <td id="First"> <b> git push -u origin master </b> </td>
+          <td>Pusht alle Dateien aus dem lokalen in das GitHub Respository.</td>
+        </tr>
+        <tr>
+          <td id="First"> <b>git config --global user.name "UserName" </b> </td>
+          <td>Setzt den User Namen zu "UserName" </td>
+        </tr>
+        <tr>
+          <td id="First"><b>git config --global user.name </b></td>
+          <td>Gibt den gesetzten User Namen aus </td>
+        </tr>
+        <tr>
+          <td id="First"><b>git config --global user.email "UserName@email.de" </b> </td>
+          <td>Setzt den User Namen zu "UserName" </td>
+        </tr>
+        <tr>
+          <td id="First"><b>git config --global user.email </b></td>
+          <td>Gibt den gesetzten E-Mail Adresse aus </td>
+        </tr>
+      </table>
+      <p>
+        Man kann eine .gitignore File anlegen, alle Dateien die in diese Datei geschrieben werden,
+        werden nicht geadded oder gepusht.
+      </p>
+      <p>
+        URL = https//github.com/UserName/file.git
+      </p>
+  </body>
+</html>
